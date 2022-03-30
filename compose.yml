@@ -6,7 +6,8 @@ services:
     restart: unless-stopped
     build:
       context: .
+      dockerfile: Dockerfile
     environment:
-      APP_PORT: 4409
+      APP_PORT: ${APP_PORT}
     ports:
       - 80:8081
