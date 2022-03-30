@@ -1,13 +1,16 @@
 FROM node:alpine
 
+# We can use --build-args at every build without changing our docker file. So, ARG is set using --build-args
+ARG APP_PORT=9999
+
+ENV APP_PORT=${APP_PORT}
+
 WORKDIR /myapp/src
 
-COPY package*.json .
+COPY ./package*.json ./
 
 RUN npm install
 
-COPY src .
+COPY ./src ./
 
-EXPOSE 8080
-
-CMD ["npm", "prod-start"]
+CMD ["npm", "run", "docker-start"]

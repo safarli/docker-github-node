@@ -1,4 +1,5 @@
 const express = require('express')
+const ENVS = require('./envs')
 
 const app = express();
 
@@ -14,4 +15,4 @@ app.get('/mottos', (req, res) => {
 	res.status(200).send('Be brave man! Be brave!')
 })
 
-app.listen(process.env.APP_PORT, () => console.log('SERVER STARTED LISTENING'))
+app.listen(ENVS.APP_PORT, () => console.log(`SERVER STARTED LISTENING ON PORT: ${ENVS.APP_PORT}`))
