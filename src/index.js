@@ -14,4 +14,4 @@ app.get('/mottos', (req, res) => {
 	res.status(200).send('Be brave man! Be brave!')
 })
 
-app.listen('8081', () => console.log('SERVER STARTED LISTENING'))
+app.listen(process.env.APP_PORT, () => console.log('SERVER STARTED LISTENING'))
