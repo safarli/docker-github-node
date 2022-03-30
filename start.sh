@@ -1,1 +1,1 @@
-docker-compose -f compose.yml up --build --force-recreate -d
+docker-compose -f compose.yml up --build --force-recreate -d && docker ps
