@@ -10,4 +10,8 @@ app.get('/books', (req, res) => {
 	res.status(200).send('Burada siz istediyinz kitablari tapa bilersiniz')
 })
 
+app.get('/mottos', (req, res) => {
+	res.status(200).send('Be brave man! Be brave!')
+})
+
 app.listen('8081', () => console.log('SERVER STARTED LISTENING ON PORT: 8080'))
