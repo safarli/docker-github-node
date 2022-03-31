@@ -1,7 +1,7 @@
 FROM node:alpine
 
 # We can use --build-arg at every build without changing our docker file. So, ARG is set using --build-arg
-ARG APP_PORT=9999
+ARG APP_PORT=4444
 
 ENV APP_PORT=${APP_PORT}
 

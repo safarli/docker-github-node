@@ -15,4 +15,4 @@ app.get('/mottos', (req, res) => {
 	res.status(200).send('Be brave man! Be brave!')
 })
 
-app.listen(ENVS.APP_PORT, () => console.log(`SERVER STARTED LISTENING ON PORT: ${ENVS.APP_PORT}`))
+app.listen(ENVS.APP_PORT, () => console.log(`SERVER STARTED & LISTENING ON PORT: ${ENVS.APP_PORT}`))
